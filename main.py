@@ -4,8 +4,9 @@
 
 import streamlit as st
 from audio_recorder_streamlit import audio_recorder
-import openai
-openai.api_key = st.secrets["API_KEY"]
+import OpenAI
+API_KEY = st.secrets["API_KEY"]
+
 
 
 def transcribe_text_to_voice(audio_location):

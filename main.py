@@ -4,7 +4,7 @@
 
 import streamlit as st
 from audio_recorder_streamlit import audio_recorder
-from openai import OpenAI
+import openai
 openai.api_key = st.secrets["API_KEY"]
 
 
